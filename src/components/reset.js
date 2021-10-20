@@ -9,8 +9,7 @@ export default function Reset({reset, toggle}) {
             type={"button"}
             onClick={toggle ? null : reset} // Stop Click for Reset
             className={"reset"}>
-            <i className={"fas fa-redo fa-3x"}>Redo
-            </i>
+            <i className={"icon"}>{Redo}</i>
         </button>
     );
 }

@@ -9,8 +9,7 @@ export default function Add({addTime, toggle}) {
             type={"button"}
             onClick={toggle ? null : addTime} // Stop Click for Increment
             className={"add"}>
-            <i className={"fas fa-plus fa-3x"} />
-            {Plus}
+            <i className={"icon"}>{Plus}</i>
         </button>
     );
 }
