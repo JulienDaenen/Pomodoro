@@ -9,6 +9,8 @@ export default function App() {
     const [seconds, setSeconds] = React.useState(0); // Time for Pomodoro
     const [timeSet, setTimeSet] = React.useState(0); // copy Time for Reset
     const [toggle, setToggle] = React.useState(false); // Button Play/Pause
+    const percentage = timeSet / seconds;
+    console.log(percentage);
     // switch Button Play/Pause
     function handleClickPlay() {
         if (toggle === true) {
@@ -56,7 +58,7 @@ export default function App() {
     return (
         <>
             <h1>{"Pomodoro"}</h1>
-            <Count seconds={seconds} />
+            <Count seconds={seconds} percentage={percentage} />
             <Add addTime={addTime} toggle={toggle} />
             <Substr decrSeconds={decrSeconds} toggle={toggle} />
             <Start handleClickPlay={handleClickPlay} />
