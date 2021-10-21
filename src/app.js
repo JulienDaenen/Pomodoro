@@ -43,8 +43,8 @@ export default function App() {
     }
     // Add 25 minutes
     function add25() {
-        const newSeconds = seconds + 1500;
-        const newTimeSet = timeSet + 1500;
+        const newSeconds = 1500;
+        const newTimeSet = 1500;
         if (newSeconds < 0) {
             setSeconds(0);
             setTimeSet(0);
@@ -55,8 +55,8 @@ export default function App() {
     }
     // Add 15 minutes
     function add15() {
-        const newSeconds = seconds + 900;
-        const newTimeSet = timeSet + 900;
+        const newSeconds = 900;
+        const newTimeSet = 900;
         if (newSeconds < 0) {
             setSeconds(0);
             setTimeSet(0);
@@ -67,8 +67,8 @@ export default function App() {
     }
     // Add 5 minutes
     function add5() {
-        const newSeconds = seconds + 300;
-        const newTimeSet = timeSet + 300;
+        const newSeconds = 300;
+        const newTimeSet = 300;
         if (newSeconds < 0) {
             setSeconds(0);
             setTimeSet(0);
