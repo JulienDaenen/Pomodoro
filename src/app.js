@@ -4,13 +4,16 @@ import Add from "./components/add";
 import Substr from "./components/substr";
 import Start from "./components/start";
 import Reset from "./components/reset";
+import Time25 from "./components/time25";
+import Time15 from "./components/time15";
+import Time5 from "./components/time5";
+import Reset0 from "./components/reset0";
 
 export default function App() {
     const [seconds, setSeconds] = React.useState(0); // Time for Pomodoro
     const [timeSet, setTimeSet] = React.useState(0); // copy Time for Reset
     const [toggle, setToggle] = React.useState(false); // Button Play/Pause
-    const percentage = timeSet / seconds;
-    console.log(percentage);
+    const percentage = (seconds / timeSet) * 100;
     // switch Button Play/Pause
     function handleClickPlay() {
         if (toggle === true) {
@@ -30,6 +33,53 @@ export default function App() {
     function addTime() {
         const newSeconds = seconds + 60;
         const newTimeSet = timeSet + 60;
+        if (newSeconds < 0) {
+            setSeconds(0);
+            setTimeSet(0);
+        } else {
+            setSeconds(newSeconds);
+            setTimeSet(newTimeSet);
+        }
+    }
+    // Add 25 minutes
+    function add25() {
+        const newSeconds = seconds + 1500;
+        const newTimeSet = timeSet + 1500;
+        if (newSeconds < 0) {
+            setSeconds(0);
+            setTimeSet(0);
+        } else {
+            setSeconds(newSeconds);
+            setTimeSet(newTimeSet);
+        }
+    }
+    // Add 15 minutes
+    function add15() {
+        const newSeconds = seconds + 900;
+        const newTimeSet = timeSet + 900;
+        if (newSeconds < 0) {
+            setSeconds(0);
+            setTimeSet(0);
+        } else {
+            setSeconds(newSeconds);
+            setTimeSet(newTimeSet);
+        }
+    }
+    // Add 5 minutes
+    function add5() {
+        const newSeconds = seconds + 300;
+        const newTimeSet = timeSet + 300;
+        if (newSeconds < 0) {
+            setSeconds(0);
+            setTimeSet(0);
+        } else {
+            setSeconds(newSeconds);
+            setTimeSet(newTimeSet);
+        }
+    }
+    function reset0() {
+        const newSeconds = seconds - seconds;
+        const newTimeSet = timeSet - timeSet;
         if (newSeconds < 0) {
             setSeconds(0);
             setTimeSet(0);
@@ -61,8 +111,14 @@ export default function App() {
             <Count seconds={seconds} percentage={percentage} />
             <Add addTime={addTime} toggle={toggle} />
             <Substr decrSeconds={decrSeconds} toggle={toggle} />
-            <Start handleClickPlay={handleClickPlay} />
+            <Start handleClickPlay={handleClickPlay} toggle={toggle} />
             <Reset reset={reset} toggle={toggle} />
+            <div className={"time"}>
+                <Time25 add25={add25} toggle={toggle} />
+                <Time15 add15={add15} toggle={toggle} />
+                <Time5 add5={add5} toggle={toggle} />
+                <Reset0 reset0={reset0} toggle={toggle} />
+            </div>
         </>
     );
 }

@@ -1,0 +1,20 @@
+.timer{
+    width: 300px;
+    height: 300px;
+    dominant-baseline: middle;
+    text-anchor: middle;
+    fill: #24ff2fd5;
+    stroke: #24ff2fd5;
+    stroke-linecap: round;
+}
+.CircularProgressbar-path{
+    stroke: #24ff2fd5;
+    -webkit-transition: stroke-dashoffset 1s ease 0s;
+    transition: stroke-dashoffset 1s;
+}
+.CircularProgressbar-trail{
+    stroke: #414141;
+}
+.CircularProgressbar-text{
+    font-size: 16px;
+}
