@@ -3,17 +3,17 @@
     height: 300px;
     dominant-baseline: middle;
     text-anchor: middle;
-    fill: #24ff2fd5;
-    stroke: #24ff2fd5;
+    fill: $main;
+    stroke: $main;
     stroke-linecap: round;
 }
 .CircularProgressbar-path{
-    stroke: #24ff2fd5;
+    stroke: $main;
     -webkit-transition: stroke-dashoffset 1s ease 0s;
     transition: stroke-dashoffset 1s;
 }
 .CircularProgressbar-trail{
-    stroke: #414141;
+    stroke: $progressBarBackground;
 }
 .CircularProgressbar-text{
     font-size: 16px;

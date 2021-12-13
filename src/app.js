@@ -107,12 +107,13 @@ export default function App() {
     }
     return (
         <>
-            <h1>{"Pomodoro"}</h1>
             <Count seconds={seconds} percentage={percentage} />
-            <Add addTime={addTime} toggle={toggle} />
-            <Substr decrSeconds={decrSeconds} toggle={toggle} />
-            <Start handleClickPlay={handleClickPlay} toggle={toggle} />
-            <Reset reset={reset} toggle={toggle} />
+            <div className={"button"}>
+                <Add addTime={addTime} toggle={toggle} />
+                <Substr decrSeconds={decrSeconds} toggle={toggle} />
+                <Start handleClickPlay={handleClickPlay} toggle={toggle} />
+                <Reset reset={reset} toggle={toggle} />
+            </div>
             <div className={"time"}>
                 <Time25 add25={add25} toggle={toggle} />
                 <Time15 add15={add15} toggle={toggle} />
