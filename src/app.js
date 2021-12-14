@@ -107,7 +107,11 @@ export default function App() {
     }
     return (
         <>
-            <Count seconds={seconds} percentage={percentage} />
+            <Count
+                seconds={seconds}
+                percentage={percentage}
+                //backgroundPadding={10}
+            />
             <div className={"button"}>
                 <Add addTime={addTime} toggle={toggle} />
                 <Substr decrSeconds={decrSeconds} toggle={toggle} />

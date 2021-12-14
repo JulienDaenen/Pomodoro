@@ -13,6 +13,8 @@ export default function Count({seconds, percentage}) {
                     className={"timer"}
                     value={percentage}
                     text={`0${m}:0${s}`}
+                    background={true}
+                    backgroundPadding={8}
                 />
             );
         }
@@ -23,6 +25,8 @@ export default function Count({seconds, percentage}) {
                     className={"timer"}
                     value={percentage}
                     text={`0${m}:${s}`}
+                    background={true}
+                    backgroundPadding={8}
                 />
             );
         }
@@ -33,6 +37,8 @@ export default function Count({seconds, percentage}) {
                     className={"timer"}
                     value={percentage}
                     text={`${m}:0${s}`}
+                    background={true}
+                    backgroundPadding={8}
                 />
             );
         }
@@ -43,6 +49,8 @@ export default function Count({seconds, percentage}) {
                     className={"timer"}
                     value={percentage}
                     text={`${m}:${s}`}
+                    background={true}
+                    backgroundPadding={8}
                 />
             );
         }
@@ -53,6 +61,8 @@ export default function Count({seconds, percentage}) {
                     className={"timer"}
                     value={percentage}
                     text={`0${h}:0${m}:0${s}`}
+                    background={true}
+                    backgroundPadding={8}
                 />
             );
         }
@@ -63,6 +73,8 @@ export default function Count({seconds, percentage}) {
                     className={"timer"}
                     value={percentage}
                     text={`0${h}:0${m}:${s}`}
+                    background={true}
+                    backgroundPadding={8}
                 />
             );
         }
@@ -73,6 +85,8 @@ export default function Count({seconds, percentage}) {
                     className={"timer"}
                     value={percentage}
                     text={`0${h}:${m}:0${s}`}
+                    background={true}
+                    backgroundPadding={8}
                 />
             );
         }
@@ -83,6 +97,8 @@ export default function Count({seconds, percentage}) {
                     className={"timer"}
                     value={percentage}
                     text={`0${h}:${m}:${s}`}
+                    background={true}
+                    backgroundPadding={8}
                 />
             );
         }
@@ -93,6 +109,8 @@ export default function Count({seconds, percentage}) {
                     className={"timer"}
                     value={percentage}
                     text={`${h}:0${m}:0${s}`}
+                    background={true}
+                    backgroundPadding={8}
                 />
             );
         }
@@ -103,6 +121,8 @@ export default function Count({seconds, percentage}) {
                     className={"timer"}
                     value={percentage}
                     text={`${h}:0${m}:${s}`}
+                    background={true}
+                    backgroundPadding={8}
                 />
             );
         }
@@ -113,6 +133,8 @@ export default function Count({seconds, percentage}) {
                     className={"timer"}
                     value={percentage}
                     text={`${h}:${m}:0${s}`}
+                    background={true}
+                    backgroundPadding={8}
                 />
             );
         }
@@ -123,6 +145,8 @@ export default function Count({seconds, percentage}) {
                     className={"timer"}
                     value={percentage}
                     text={`${h}:${m}:${s}`}
+                    background={true}
+                    backgroundPadding={8}
                 />
             );
         }
@@ -131,6 +155,8 @@ export default function Count({seconds, percentage}) {
                 className={"timer"}
                 value={percentage}
                 text={`${m}:${s}`}
+                background={true}
+                backgroundPadding={8}
             />
         );
     } else if (h === 0 && m === 0 && s === 0) {
@@ -139,6 +165,8 @@ export default function Count({seconds, percentage}) {
                 className={"timer"}
                 value={0}
                 text={`00:00`}
+                background={true}
+                backgroundPadding={8}
             />
         );
     }
