@@ -12,7 +12,9 @@ html{
     height: 100%;
 }
 body{
-    background-color: $background;
+    background: rgb(36,36,36);
+    background: linear-gradient(0deg, $background 0%, $background_gradient 100%);
+    //background-color: $background;
     color: $main;
     text-align: center;
     display: flex;
