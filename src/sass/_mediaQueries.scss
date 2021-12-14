@@ -1,0 +1,22 @@
+@media (min-width: 320px) and (max-width: 1023px) {
+    body{
+        background: $background;
+    }
+    .icon::before{
+        display: none;
+    }
+    .icon::after{
+        display: none;
+    }
+    .timeButton::before{
+        display: none;
+    }
+    .timeButton::after{
+        display: none;
+    }
+}
+@media (min-width: 320px) and (max-width: 450px) {
+    body{
+        //flex-flow: ;
+    }
+}
