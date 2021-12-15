@@ -1,7 +1,35 @@
-@media (min-width: 320px) and (max-width: 1023px) {
-    body{
-        background: $background;
+// Phone
+@media (max-width: 500px) {
+    // button
+    .button{
+        flex-flow: wrap;
     }
+    .time{
+        flex-flow: wrap;
+    }
+}
+@media (max-width: 403px) {
+    // button
+    .button_1{
+        padding-bottom: 1rem;
+    }
+    .button_2{
+        padding-top: 1rem;
+    }
+}
+@media (max-width: 430px) {
+    // button
+    .time_1{
+        padding-bottom: 0.4rem;
+    }
+    .time_2{
+        padding-top: 0.4rem;
+    }
+}
+
+// Tablet
+@media (max-width: 767px) {
+    // button
     .icon::before{
         display: none;
     }
@@ -15,8 +43,91 @@
         display: none;
     }
 }
-@media (min-width: 320px) and (max-width: 450px) {
-    body{
-        //flex-flow: ;
+
+// 4K (3840x2160)
+@media (min-width: 3840px){
+    // roundBar
+    .timer{
+        width: 900px;
+        height: 900px;
+        margin-bottom: 4rem;
+    }
+
+    // button
+    button{
+        margin: 0 2.5rem;
+    }
+    .button{
+        padding: 3rem 0;
+    }
+    .icon{
+        font-size: 5rem;
+        border: $neon_clr 8px solid;
+        border-radius: 2rem;
+        filter: drop-shadow(0 0 1rem $neon_clr);
+    }
+    .icon::before{
+        top: 280%;
+        transform: perspective(2rem) rotateX(30deg) scale(0.6, 0.25);
+        filter: blur(5rem);
+        opacity: 0.7;
+    }
+    .time{
+        padding: 3rem 0;
+    }
+    .timeButton{
+        font-size: 5rem;
+        border: $neon_clr 8px solid;
+        border-radius: 2rem;
+        filter: drop-shadow(0 0 1rem $neon_clr);
+    }
+    .timeButton::before{
+        transform: perspective(2rem) rotateX(30deg) scale(0.6, 0.25);
+        filter: blur(5rem);
+        opacity: 0.7;
+    }
+}
+
+// 8K (7680x4320)
+@media (min-width: 7640px){
+    // roundBar
+    .timer{
+        width: 1800px;
+        height: 1800px;
+        margin-bottom: 5rem;
+    }
+
+    // button
+    button{
+        margin: 0 5rem;
+    }
+    .button{
+        padding: 8rem 0;
+    }
+    .icon{
+        font-size: 12rem;
+        border: $neon_clr 25px solid;
+        border-radius: 5rem;
+        filter: drop-shadow(0 0 2rem $neon_clr);
+}
+    .icon::before{
+        top: 260%;
+        transform: perspective(3rem) rotateX(30deg) scale(0.6, 0.25);
+        filter: blur(10rem);
+        opacity: 0.7;
+    }
+    .time{
+        padding: 3rem 0;
+    }
+    .timeButton{
+        font-size: 12rem;
+        border: $neon_clr 25px solid;
+        border-radius: 5rem;
+        filter: drop-shadow(0 0 2rem $neon_clr);
+    }
+    .timeButton::before{
+        transform: perspective(3rem) rotateX(30deg) scale(0.6, 0.25);
+        filter: blur(10rem);
+        opacity: 0.7;
     }
 }

@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import React from "react";
 import Count from "./components/count";
 import Add from "./components/add";
@@ -113,16 +114,24 @@ export default function App() {
                 //backgroundPadding={10}
             />
             <div className={"button"}>
-                <Add addTime={addTime} toggle={toggle} />
-                <Substr decrSeconds={decrSeconds} toggle={toggle} />
-                <Start handleClickPlay={handleClickPlay} toggle={toggle} />
-                <Reset reset={reset} toggle={toggle} />
+                <div className={"button_1"}>
+                    <Add addTime={addTime} toggle={toggle} />
+                    <Substr decrSeconds={decrSeconds} toggle={toggle} />
+                </div>
+                <div className={"button_2"}>
+                    <Start handleClickPlay={handleClickPlay} toggle={toggle} />
+                    <Reset reset={reset} toggle={toggle} />
+                </div>
             </div>
             <div className={"time"}>
-                <Time25 add25={add25} toggle={toggle} />
-                <Time15 add15={add15} toggle={toggle} />
-                <Time5 add5={add5} toggle={toggle} />
-                <Reset0 reset0={reset0} toggle={toggle} />
+                <div className={"time_1"}>
+                    <Time25 add25={add25} toggle={toggle} />
+                    <Time15 add15={add15} toggle={toggle} />
+                </div>
+                <div className={"time_2"}>
+                    <Time5 add5={add5} toggle={toggle} />
+                    <Reset0 reset0={reset0} toggle={toggle} />
+                </div>
             </div>
         </>
     );

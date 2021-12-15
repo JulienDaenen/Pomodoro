@@ -1,7 +1,7 @@
 @import "./variables";
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 
-*{
+html *{
     margin: 0;
     border: 0;
     padding: 0;
@@ -12,14 +12,14 @@ html{
     height: 100%;
 }
 body{
+    height: 100%;
     background: $background;
-    background: linear-gradient(0deg, $background 0%, $background_gradient 100%);
     color: $main;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    overflow-x: hidden;
 }
 #root{
     flex-flow: column;
