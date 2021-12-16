@@ -27,8 +27,7 @@
     }
 }
 
-// Tablet
-@media (max-width: 767px) {
+@media (max-width: 900px) {
     // button
     .icon::before{
         display: none;
@@ -44,13 +43,13 @@
     }
 }
 
-// 4K (3840x2160)
-@media (min-width: 3840px){
+// 2K (2560x1440)
+@media (min-width: 2560px){
     // roundBar
     .timer{
-        width: 900px;
-        height: 900px;
-        margin-bottom: 4rem;
+        width: 700px;
+        height: 700px;
+        margin-bottom: 2rem;
     }
 
     // button
@@ -62,7 +61,7 @@
     }
     .icon{
         font-size: 5rem;
-        border: $neon_clr 8px solid;
+        border: $neon_clr 10px solid;
         border-radius: 2rem;
         filter: drop-shadow(0 0 1rem $neon_clr);
     }
@@ -77,7 +76,51 @@
     }
     .timeButton{
         font-size: 5rem;
-        border: $neon_clr 8px solid;
+        border: $neon_clr 10px solid;
+        border-radius: 2rem;
+        filter: drop-shadow(0 0 1rem $neon_clr);
+    }
+    .timeButton::before{
+        transform: perspective(2rem) rotateX(30deg) scale(0.6, 0.25);
+        filter: blur(5rem);
+        opacity: 0.7;
+    }
+}
+
+// 4K (4096x2160)
+@media (min-width: 4096px){
+    // roundBar
+    .timer{
+        width: 1200px;
+        height: 1200px;
+        margin-bottom: 4rem;
+    }
+
+    // button
+    button{
+        margin: 0 2.5rem;
+    }
+    .button{
+        padding: 3rem 0;
+    }
+    .icon{
+        font-size: 7rem;
+        border: $neon_clr 12px solid;
+        border-radius: 2rem;
+        filter: drop-shadow(0 0 1rem $neon_clr);
+    }
+    .icon::before{
+        top: 255%;
+        transform: perspective(2rem) rotateX(30deg) scale(0.6, 0.25);
+        filter: blur(5rem);
+        opacity: 0.7;
+    }
+    .time{
+        padding: 3rem 0;
+    }
+    .timeButton{
+        font-size: 7rem;
+        border: $neon_clr 12px solid;
         border-radius: 2rem;
         filter: drop-shadow(0 0 1rem $neon_clr);
     }
@@ -92,8 +135,8 @@
 @media (min-width: 7640px){
     // roundBar
     .timer{
-        width: 1800px;
-        height: 1800px;
+        width: 2200px;
+        height: 2200px;
         margin-bottom: 5rem;
     }
 
@@ -105,10 +148,10 @@
         padding: 8rem 0;
     }
     .icon{
-        font-size: 12rem;
-        border: $neon_clr 25px solid;
+        font-size: 16rem;
+        border: $neon_clr 35px solid;
         border-radius: 5rem;
-        filter: drop-shadow(0 0 2rem $neon_clr);
+        filter: drop-shadow(0 0 3rem $neon_clr);
 }
     .icon::before{
         top: 260%;
@@ -120,10 +163,10 @@
         padding: 3rem 0;
     }
     .timeButton{
-        font-size: 12rem;
-        border: $neon_clr 25px solid;
+        font-size: 16rem;
+        border: $neon_clr 35px solid;
         border-radius: 5rem;
-        filter: drop-shadow(0 0 2rem $neon_clr);
+        filter: drop-shadow(0 0 3rem $neon_clr);
     }
     .timeButton::before{
         transform: perspective(3rem) rotateX(30deg) scale(0.6, 0.25);

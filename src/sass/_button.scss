@@ -27,7 +27,6 @@ button{
     box-shadow: inset 0 0 0.5em 0 $neon_clr, 0 0 0.125em hsla(340,65%,100%,0.2), 0 0 0.5em 0 $neon_clr;
     border-radius: 1rem;
     font-size: 2rem;
-    position: relative;
     transition: background-color 100ms linear;
 }
 .icon::before{
